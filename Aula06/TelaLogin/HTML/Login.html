@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css " integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="
+    anonymous " referrerpolicy="no-referrer ">
+    <link rel="stylesheet" href="../CSS/Login.css">
+    <script src="login.js" defer></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Faça o login</h1>
+            <img id="foguete" src="/Assets/SVG.svg" alt="Foguete">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="textfield">
+                    <label for="usuario">Email</label>
+                    <input type="text" name="usuario" placeholder="Email">
+                </div>
+                <div class="textfield">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="password" placeholder="Senha">
+                    <span class="show-btn"><i class="fa-regular fa-eye"></i></span>
+
+                </div>
+
+                <script type="text/javascript">
+                    var btn = document.getElementById('btn')
+
+                    btn.addEventListener('click', function() {
+
+                        let password = document.getElementById('password')
+
+                        if (password.type == "password") {
+                            password.type = "text"
+                            this.style.opacity = "1"
+
+                        } else {
+                            password.type = "password"
+                            this.style.opacity = ".4"
+                        }
+                    })
+                </script>
+                <button class="btn-login">Login</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
